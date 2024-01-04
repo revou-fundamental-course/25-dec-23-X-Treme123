@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+        <form action="#">
+            <button class="area"><a href="index.html">Luas Segitiga</a></button>
+
+            <div class="rectangle"><h2>Keliling Segitiga</h2></div>
+
+            <img src="assets/gambar segitiga.png" alt="gambar segitiga">
+
+            <div class="formula">
+                <p>Rumus Keliling Segitiga yaitu:</p>
+                <p class="perimeter-formula"><b>K = S1 + S2 + S3</b></p>
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+                <hr>
+            </div>
+
+            <div class="calculate-perimeter"><h2>Hitung Keliling Segitiga</h2></div>
+
+            <input type="number" id="sideA" name="sideA" placeholder="Nilai Sisi A"><br>
+            <input type="number" id="sideB" name="sideB" placeholder="Nilai Sisi B"><br>
+            <input type="number" id="sideC" name="sideC" placeholder="Nilai Sisi C">
+            <br>
+            <p id="result"></p>
+            <button class="count" onclick="hitungKeliling()">Hitung</button><br>
+            <button class="reset" onclick="resetForm()">Reset</button>
+            <script src="js/keliling.js"></script>
+        </form>
+        
+</body>
+</html>
